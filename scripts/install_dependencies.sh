@@ -1,6 +1,7 @@
 #!/bin/bash
 yum install -y httpd
 cd  /var/www/html/
+touch index.html
 rm index.html
-cd  /opt/codedeploy-agent/deployment-root/
-rm -r *.* 
+rm  /opt/codedeploy-agent/deployment-root/*
+
